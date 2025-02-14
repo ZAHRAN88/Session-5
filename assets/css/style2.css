@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 20px auto;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.text {
+    color: red !important;
+}
+
+.child {
+    color: inherit;
+}
+
+.wiggle-button {
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+    animation: wiggle 1s infinite;
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+}

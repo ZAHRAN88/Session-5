@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+
+
+body{
+    background: url("/assets/images/road.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    animation: bg 5s alternate infinite linear;
+}
+
+.taxi{
+    width: 200px;
+    position: absolute;
+    transform: rotateY(180deg);
+    animation: move 4s  infinite linear;
+    
+
+}
+.clouds{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.cloud{
+    width: 200px;
+    
+}
+.cloud1{
+    animation: cloud1 2s alternate infinite linear;
+}
+.cloud2{
+    animation: cloud2 5s alternate infinite linear;
+}
+
+@keyframes move {
+
+    0%{
+        left: 0;
+        bottom: 0;
+        transform: rotateY(180deg);
+    }
+    50%{
+        left: 1400px;
+        bottom: 0;
+        transform: rotateY(180deg);
+    }
+    51%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        left: 0;
+        bottom: 0;
+        transform: rotateY(360deg);
+    }
+  
+}
+@keyframes cloud1 {
+    0%{
+        transform: translateX(0);
+
+    }
+    50%{
+        transform: translateX(50%);
+
+    }
+    100%{
+        transform: translateX(100%);
+    }
+    
+}
+@keyframes cloud2 {
+    0%{
+        transform: translateY(0);
+
+    }
+    50%{
+        transform: translateY(20px);
+
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes bg {
+    0%{
+        background-image: url("/assets/images/bonsai-rock-milky-3840x2160-21130.jpg");
+    }
+    50%{
+        background-image: url("/assets/images/cgi-landscape-5k-3840x2160-21174.jpg");
+    }
+    100%{
+        background-image: url("/assets/images/landscape-infrared-3840x2160-21169.jpg");
+    }
+}
