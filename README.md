@@ -148,6 +148,5 @@ In this session, we covered essential CSS techniques to enhance UI design and in
 
 ## 🎯 **Final Assignment (6-Day Challenge)**
 https://www.figma.com/design/FlT6WnfqYf9CcrZK5WtLXI/Ecommerce-Web-UI-Kit-(Community)?node-id=92-229&p=f&t=bvVAYI7i3Ot5CnFO-0
-### **Create an Interactive Profile Card**
-📌 **Requirements:**
+
 
